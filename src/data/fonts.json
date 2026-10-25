@@ -1,0 +1,11 @@
+{
+  "fontPairs": [
+    { "id": "garamond-garamond", "label": "EB Garamond (LaTeX-like)", "heading": "EB Garamond", "body": "EB Garamond", "google": "EB+Garamond:wght@400;500;700" },
+    { "id": "lora-inter", "label": "Lora + Inter", "heading": "Lora", "body": "Inter", "google": "Lora:wght@500;700&family=Inter:wght@400;500;600" },
+    { "id": "playfair-source", "label": "Playfair Display + Source Sans 3", "heading": "Playfair Display", "body": "Source Sans 3", "google": "Playfair+Display:wght@500;700&family=Source+Sans+3:wght@400;600" },
+    { "id": "merriweather-lato", "label": "Merriweather + Lato", "heading": "Merriweather", "body": "Lato", "google": "Merriweather:wght@400;700&family=Lato:wght@400;700" },
+    { "id": "plex-mono", "label": "IBM Plex Sans + Plex Mono", "heading": "IBM Plex Sans", "body": "IBM Plex Sans", "mono": "IBM Plex Mono", "google": "IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500" },
+    { "id": "inter-inter", "label": "Inter (Minimal)", "heading": "Inter", "body": "Inter", "google": "Inter:wght@400;500;600;700" },
+    { "id": "poppins-opensans", "label": "Poppins + Open Sans", "heading": "Poppins", "body": "Open Sans", "google": "Poppins:wght@500;600;700&family=Open+Sans:wght@400;600" }
+  ]
+}

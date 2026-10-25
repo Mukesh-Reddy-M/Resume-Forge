@@ -1,0 +1,74 @@
+@import "tailwindcss";
+
+@layer base {
+  * {
+    box-sizing: border-box;
+  }
+}
+
+/* ------------------------------------------------------------------ */
+/* Print: real, selectable vector text; every page gets the same margins */
+/* ------------------------------------------------------------------ */
+@page {
+  size: A4 portrait;
+  margin: 0; /* margins come from the table's repeating thead/tfoot spacers */
+}
+
+/* Off-canvas on screen: used only to measure pagination. */
+#print-root {
+  position: fixed;
+  top: 0;
+  left: -100000px;
+  width: 210mm;
+  visibility: hidden;
+  pointer-events: none;
+}
+
+.print-table {
+  border-collapse: collapse;
+  border-spacing: 0;
+  table-layout: fixed;
+}
+.print-table > thead { display: table-header-group; }
+.print-table > tfoot { display: table-footer-group; }
+
+@media print {
+  html,
+  body {
+    background: #ffffff !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    -webkit-print-color-adjust: exact !important;
+    print-color-adjust: exact !important;
+  }
+
+  /* Hide the whole app shell (not "header"/"aside" tags — templates use those). */
+  #root,
+  .no-print {
+    display: none !important;
+  }
+
+  #print-root {
+    position: static !important;
+    left: auto !important;
+    width: 210mm !important;
+    visibility: visible !important;
+    pointer-events: auto;
+  }
+
+  .print-table {
+    width: 210mm !important;
+  }
+
+  /* Keep entries/bullets whole and headings attached to what follows. */
+  .break-inside-avoid,
+  li {
+    break-inside: avoid;
+    page-break-inside: avoid;
+  }
+  [data-heading],
+  *:has(> h2):not(section):not(body) {
+    break-after: avoid;
+    page-break-after: avoid;
+  }
+}

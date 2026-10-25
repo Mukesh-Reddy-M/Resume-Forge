@@ -1,0 +1,69 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "Resume",
+  "type": "object",
+  "required": ["meta", "basics"],
+  "properties": {
+    "meta": {
+      "type": "object",
+      "properties": {
+        "templateId": { "type": "string" },
+        "fontId": { "type": "string" },
+        "accent": { "type": "string", "pattern": "^#[0-9a-fA-F]{3,8}$" },
+        "density": { "enum": ["compact", "comfortable", "spacious"] },
+        "showPhoto": { "type": "boolean" },
+        "photoUrl": { "type": ["string", "null"], "description": "data URL of the cropped photo" },
+        "photoShape": { "enum": ["circle", "square", "rounded"] },
+        "sectionOrder": { "type": "array", "items": { "type": "string" } }
+      }
+    },
+    "basics": {
+      "type": "object",
+      "required": ["name"],
+      "properties": {
+        "name": { "type": "string" },
+        "title": { "type": "string" },
+        "email": { "type": "string" },
+        "phone": { "type": "string" },
+        "location": { "type": "string" },
+        "links": {
+          "type": "array",
+          "items": { "type": "object", "properties": { "label": { "type": "string" }, "url": { "type": "string" } } }
+        }
+      }
+    },
+    "summary": { "type": "string" },
+    "education": {
+      "type": "array",
+      "items": { "type": "object", "properties": {
+        "degree": { "type": "string" }, "school": { "type": "string" },
+        "start": { "type": "string" }, "end": { "type": "string" }, "gpa": { "type": "string" } } }
+    },
+    "skills": {
+      "type": "array",
+      "items": { "type": "object", "properties": {
+        "category": { "type": "string" }, "items": { "type": "array", "items": { "type": "string" } } } }
+    },
+    "experience": {
+      "type": "array",
+      "items": { "type": "object", "properties": {
+        "role": { "type": "string" }, "company": { "type": "string" },
+        "start": { "type": "string" }, "end": { "type": "string" },
+        "bullets": { "type": "array", "items": { "type": "string" } } } }
+    },
+    "projects": {
+      "type": "array",
+      "items": { "type": "object", "properties": {
+        "group": { "type": "string" }, "name": { "type": "string" },
+        "stack": { "type": "array", "items": { "type": "string" } },
+        "link": { "type": "string" }, "subtitle": { "type": "string" },
+        "bullets": { "type": "array", "items": { "type": "string" } } } }
+    },
+    "custom": {
+      "type": "array",
+      "items": { "type": "object", "properties": {
+        "id": { "type": "string" }, "title": { "type": "string" },
+        "bullets": { "type": "array", "items": { "type": "string" } } } }
+    }
+  }
+}

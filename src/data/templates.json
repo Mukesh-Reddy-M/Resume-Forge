@@ -1,0 +1,52 @@
+{
+  "templates": [
+    {
+      "id": "classic", "name": "Classic", "isDefault": true,
+      "description": "Single column, centered name, ruled uppercase section headings, serif. Matches the uploaded resume.",
+      "layout": "single-column", "supportsPhoto": true, "photoPlacement": "header-right",
+      "defaultFontId": "garamond-garamond", "defaultAccent": "#111111",
+      "tokens": { "nameSize": 26, "nameAlign": "center", "headingStyle": "uppercase-rule", "bodySize": 10.5, "entryHeader": "bold-left-date-right", "stackStyle": "inline-italic" }
+    },
+    {
+      "id": "modern-sidebar", "name": "Modern Sidebar", "isDefault": false,
+      "description": "Two columns. Colored left sidebar holds photo, contact and skills.",
+      "layout": "two-column-left", "supportsPhoto": true, "photoPlacement": "sidebar-top",
+      "defaultFontId": "lora-inter", "defaultAccent": "#1f3a5f",
+      "tokens": { "sidebarWidthPct": 32, "nameSize": 24, "nameAlign": "left", "headingStyle": "accent-bar", "bodySize": 10 }
+    },
+    {
+      "id": "minimal-sans", "name": "Minimal Sans", "isDefault": false,
+      "description": "Lots of whitespace, no rules, light sans-serif.",
+      "layout": "single-column", "supportsPhoto": true, "photoPlacement": "header-left",
+      "defaultFontId": "inter-inter", "defaultAccent": "#444444",
+      "tokens": { "nameSize": 28, "nameAlign": "left", "headingStyle": "plain-small-caps", "bodySize": 10.5 }
+    },
+    {
+      "id": "compact-tech", "name": "Compact Tech", "isDefault": false,
+      "description": "Dense layout with monospace accents for developers.",
+      "layout": "single-column", "supportsPhoto": false, "photoPlacement": null,
+      "defaultFontId": "plex-mono", "defaultAccent": "#0b6e4f",
+      "tokens": { "nameSize": 22, "nameAlign": "left", "headingStyle": "bracketed-mono", "bodySize": 9.5 }
+    },
+    {
+      "id": "creative-bold", "name": "Creative Bold", "isDefault": false,
+      "description": "Full-width colored header block with circular photo.",
+      "layout": "header-block", "supportsPhoto": true, "photoPlacement": "header-right",
+      "defaultFontId": "poppins-opensans", "defaultAccent": "#7c3aed",
+      "tokens": { "headerBg": "accent", "nameSize": 30, "nameAlign": "left", "headingStyle": "accent-underline", "bodySize": 10 }
+    },
+    {
+      "id": "executive", "name": "Executive", "isDefault": false,
+      "description": "Elegant serif, left-aligned header, photo top-left.",
+      "layout": "single-column", "supportsPhoto": true, "photoPlacement": "header-left",
+      "defaultFontId": "playfair-source", "defaultAccent": "#7a1f2b",
+      "tokens": { "nameSize": 27, "nameAlign": "left", "headingStyle": "serif-double-rule", "bodySize": 10.5 }
+    }
+  ],
+  "densityPresets": {
+    "compact":     { "lineHeight": 1.25, "sectionGapPx": 8,  "entryGapPx": 4,  "pagePaddingMm": 12 },
+    "comfortable": { "lineHeight": 1.4,  "sectionGapPx": 14, "entryGapPx": 7,  "pagePaddingMm": 15 },
+    "spacious":    { "lineHeight": 1.55, "sectionGapPx": 20, "entryGapPx": 10, "pagePaddingMm": 18 }
+  },
+  "accentPalette": ["#111111", "#1f3a5f", "#0b6e4f", "#7a1f2b", "#7c3aed", "#c2410c"]
+}

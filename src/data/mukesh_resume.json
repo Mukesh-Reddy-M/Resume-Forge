@@ -1,0 +1,156 @@
+{
+  "meta": {
+    "templateId": "classic",
+    "fontId": "garamond-garamond",
+    "accent": "#111111",
+    "density": "compact",
+    "showPhoto": false,
+    "photoUrl": null,
+    "photoShape": "circle",
+    "sectionOrder": ["summary", "education", "skills", "experience", "projects", "competitions", "achievements"]
+  },
+  "basics": {
+    "name": "Mukesh Reddy",
+    "email": "mukeshmreddy@gmail.com",
+    "phone": "+91 85006 35807",
+    "links": [
+      { "label": "LinkedIn", "url": "" },
+      { "label": "GitHub", "url": "" },
+      { "label": "Kinetic Flow", "url": "" }
+    ]
+  },
+  "summary": "Full-Stack AI Developer with a year of production experience building Supabase/PostgreSQL backends, REST APIs, and LLM-powered workflows for healthcare and food-delivery products. B.Tech CSE student (CGPA 9.2/10) pursuing a parallel IIT Madras BS in Data Science and an AI/ML program at IIIT Hyderabad.",
+  "education": [
+    {
+      "degree": "B.Tech, Computer Science and Engineering",
+      "school": "C. R. Rao Advanced Institute of Mathematics, Statistics and Computer Science",
+      "start": "2025", "end": "2029", "gpa": "GPA: 9.2/10"
+    },
+    {
+      "degree": "B.S., Data Science and Applications (Online)",
+      "school": "Indian Institute of Technology Madras",
+      "start": "2025", "end": "2029", "gpa": "GPA: 7.0/10"
+    },
+    {
+      "degree": "AI/ML Training Program",
+      "school": "IIIT Hyderabad (iHub-Data)",
+      "start": "Sep 2026", "end": "Present", "gpa": ""
+    }
+  ],
+  "skills": [
+    { "category": "Languages", "items": ["Python", "C++", "C", "JavaScript"] },
+    { "category": "AI/ML", "items": ["PyTorch", "LLM integration (Claude, Gemini, OpenAI API, Ollama)", "Prompt Engineering"] },
+    { "category": "Backend", "items": ["FastAPI", "REST APIs", "Node.js", "Supabase", "PostgreSQL", "Edge Functions", "Authentication"] },
+    { "category": "Data", "items": ["NumPy", "Pandas", "Matplotlib"] },
+    { "category": "Tools", "items": ["Git", "GitHub", "Conda", "Flutter"] },
+    { "category": "Mathematics", "items": ["Probability", "Linear Algebra", "Calculus", "Statistics"] }
+  ],
+  "experience": [
+    {
+      "role": "Full-Stack AI Developer",
+      "company": "Kinetic Flow AI",
+      "start": "Oct 2025", "end": "Present",
+      "bullets": [
+        "Built and shipped backend systems for healthcare, caregiver-management, and food-delivery platforms using Python, Supabase, and PostgreSQL.",
+        "Designed REST APIs, authentication flows, and database schemas powering booking, scheduling, and real-time tracking workflows.",
+        "Integrated Claude, Gemini, and locally hosted Ollama models into backend workflows, including AI-driven customer communication.",
+        "Developed operational dashboards and workflow automation that streamlined day-to-day client operations.",
+        "Partnered with frontend developers on responsive web and mobile apps; handled deployment, testing, debugging, and ongoing maintenance."
+      ]
+    }
+  ],
+  "projects": [
+    {
+      "group": "Company Projects — Kinetic Flow AI",
+      "name": "GalliBite — Food Delivery Platform",
+      "stack": ["Supabase", "PostgreSQL", "Edge Functions", "Flutter"],
+      "link": "", "subtitle": "",
+      "bullets": [
+        "Contributed to a multi-app ecosystem serving customers, vendors, riders, and admins, plus a marketing website.",
+        "Implemented backend services, authentication, and Edge Functions with unified cross-app workflows.",
+        "Prepared the product for Google Play Store submission through debugging and production-readiness work."
+      ]
+    },
+    {
+      "group": "Company Projects — Kinetic Flow AI",
+      "name": "MitraCare — Healthcare Coordination Platform",
+      "stack": ["Supabase", "PostgreSQL", "LLM APIs"],
+      "link": "", "subtitle": "",
+      "bullets": [
+        "Contributed to a platform spanning customer and companion portals, an operations dashboard, and a public website.",
+        "Built backend workflows for booking management, real-time tracking, AI-powered customer communication, and operational automation."
+      ]
+    },
+    {
+      "group": "Hackathon Projects",
+      "name": "DeepShield — Deepfake Audio Detection",
+      "stack": ["Python", "PyTorch", "Node.js", "Ollama"],
+      "link": "", "subtitle": "",
+      "bullets": [
+        "Built an AI platform that detects deepfake audio, with GPU-accelerated PyTorch model inference.",
+        "Developed backend APIs and integrated the model into a Node.js web application.",
+        "Added local LLM inference via Ollama to support AI-powered backend workflows."
+      ]
+    },
+    {
+      "group": "Hackathon Projects",
+      "name": "Polar Twin — Remote Operations Platform for Antarctic Research Stations",
+      "stack": ["Python", "FastAPI", "React", "Vite", "SQLite"],
+      "link": "GitHub", "subtitle": "SIH 2026 (PS 26060), Team Leader",
+      "bullets": [
+        "Building a bandwidth-aware digital twin for India's Maitri and Bharati stations that models energy, infrastructure, and inventory signals from simulated telemetry.",
+        "Implemented explainable Normal/Warning/Critical alerts, storm and reset scenarios, and a fuel stock-out vs shipment-ETA outlook.",
+        "Built an offline edge-buffer simulation that compresses readings during a link outage and syncs them after reconnect."
+      ]
+    },
+    {
+      "group": "Hackathon Projects",
+      "name": "DarkLens — Dark Web Threat Actor Attribution Platform",
+      "stack": ["React", "Vite", "FastAPI", "SQLite"],
+      "link": "GitHub", "subtitle": "SIH 2026 (PS 26151), Team Leader",
+      "bullets": [
+        "Developing an explainable, analyst-in-the-loop platform that links synthetic dark-web identifiers (handles, PGP keys, wallets, infrastructure) into evidence-backed case graphs.",
+        "Built a FastAPI + SQLite backend with validated case import, review audit trail, and Markdown/JSON/CSV exports, plus a React dashboard with relationship graph, timeline, and review queue.",
+        "Implemented transparent review-priority scoring with duplicate-evidence discounting and counter-evidence detection; passed 78/78 checks on a 10-case synthetic corpus and holdout suite."
+      ]
+    },
+    {
+      "group": "Quantitative Finance Projects",
+      "name": "Wunder Fund Alfa Connectome: HFT Order-Book Prediction",
+      "stack": ["Python", "PyTorch", "ONNX"],
+      "link": "GitHub", "subtitle": "Team Varanasi",
+      "bullets": [
+        "Ongoing: public rank 302 of 5,111.",
+        "Built a stateful GRU that predicts two future-price indicators row by row from a live stream of 112 limit-order-book features on two instruments; 0.687 weighted Pearson on validation against the official baseline's 0.617.",
+        "Met a 1-vCPU, ~90-microsecond-per-row latency budget for 39.4M test rows: int8-quantised ONNX export (score loss under 0.0001) cut inference from 203 to 59 microseconds per row, so a two-model ensemble runs in about 34 of the 60 minutes allowed. Treated every change as a controlled experiment: a baseline calibration submission showed the validation-to-leaderboard drop was shared by everyone, and seed noise (0.0013) was measured before any gain was accepted. Climbed from rank 543 to 302 with 6 submissions."
+      ]
+    },
+    {
+      "group": "Personal Projects",
+      "name": "Offside — Football App",
+      "stack": ["Flutter"],
+      "link": "GitHub", "subtitle": "",
+      "bullets": [
+        "Developing a mobile football app with live football data integration and match-detail features."
+      ]
+    }
+  ],
+  "custom": [
+    {
+      "id": "competitions",
+      "title": "CTF & Competitions",
+      "bullets": [
+        "IIT Bombay BodhiCoder Selection: Ranked 79 of 4,095; shortlisted for the interview stage of the competitive C++ program.",
+        "Breach Point, Season 2 (CTF): Placed 92nd of 300 participants.",
+        "Programming Club OSINT CTF: Co-designed an Open-Source Intelligence challenge for the club's CTF."
+      ]
+    },
+    {
+      "id": "achievements",
+      "title": "Achievements",
+      "bullets": [
+        "Earned 20+ Google Cloud Skills Boost badges through hands-on cloud labs."
+      ]
+    }
+  ]
+}
