@@ -1,10 +1,10 @@
-import mukeshResumeData from '../data/mukesh_resume.json';
+import sampleData from '../data/john_doe_classic.json';
 import templatesData from '../data/templates.json';
 import fontsData from '../data/fonts.json';
 import resumeSchema from '../data/resume.schema.json';
 import { Resume, TemplateDefinition, DensityPreset, FontPair, DensityPresetId } from '../types/resume';
 
-export const SAMPLE_RESUME: Resume = mukeshResumeData as unknown as Resume;
+export const SAMPLE_RESUME: Resume = sampleData as unknown as Resume;
 
 export const TEMPLATES: TemplateDefinition[] = templatesData.templates as unknown as TemplateDefinition[];
 
